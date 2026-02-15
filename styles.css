@@ -325,6 +325,33 @@ body {
     gap: 2rem;
 }
 
+.screenshot-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.screenshot-item img {
+    width: 100%;
+    aspect-ratio: 9/19.5;
+    border-radius: 20px;
+    object-fit: cover;
+    border: 2px solid rgba(76, 175, 80, 0.2);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.screenshot-item img:hover {
+    transform: translateY(-5px);
+    border-color: rgba(76, 175, 80, 0.5);
+}
+
+.screenshot-caption {
+    text-align: center;
+    color: #B3B3B3;
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
 .screenshot-placeholder {
     background: #1E1E1E;
     aspect-ratio: 9/19.5;
